@@ -1,10 +1,18 @@
 body {
-    background-color: black;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 ul {
     list-style-type: circle;
+}
+
+li {
+    font-size: 24px;
+    font-weight: lighter;
 }
 
 a {
@@ -21,6 +29,7 @@ a:active {
 }
 
 #wordmark {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     bottom: -32px;
     font-size: 32px;
