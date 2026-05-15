@@ -11,6 +11,7 @@ ul {
 }
 
 li {
+    margin: 6px;
     font-size: 24px;
     font-weight: lighter;
     text-shadow: 
