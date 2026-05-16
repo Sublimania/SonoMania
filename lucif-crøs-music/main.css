@@ -1,0 +1,93 @@
+body {
+    background: url("jpg/background.jpg") center/cover;
+    background-color: black;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    visibility: hidden;
+
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    text-shadow: 0px 0px 6px black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+}
+
+li {
+    margin: 6px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-shadow: 
+    0.5px 0.5px rgba(255, 255, 255, 0.5), 
+    -0.5px -0.5px rgba(255, 255, 255, 0.5), 
+    0.5px -0.5px rgba(255, 255, 255, 0.5), 
+    -0.5px 0.5px rgba(255, 255, 255, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color:blueviolet;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:active {
+    color: goldenrod;
+}
+
+#wordmark {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:fixed;
+    bottom: -32px;
+    font-size: 32px;
+
+    background: linear-gradient(to right, blueviolet, crimson, goldenrod);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.60);
+}
+
+#skull {
+    font-size: 46px;
+}
+
+.cover {
+    width: 75px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    border-radius: 1px;
+    outline: 3px ridge rgb(175, 175, 175);
+    box-shadow: 
+    2px 2px 6px rgb(0, 0, 0, 0.5), 
+    -2px -2px 6px rgb(0, 0, 0, 0.5), 
+    2px -2px 6px rgb(0, 0, 0, 0.5), 
+    -2px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+.brand {
+    height: 50px;
+    margin: 6px;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+}
+
+#external {
+    position:fixed;
+    bottom: 6px;
+    right: 9px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
