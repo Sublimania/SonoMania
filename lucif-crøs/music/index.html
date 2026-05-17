@@ -1,104 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lucif Crøs - Music</title>
 
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-        <link rel="stylesheet" href="../assets/css/music.css">
-        <link rel="canonical" href="https://sonomania.forgeheart.org/lucif-crøs/music">
+<head>
+    <title>Lucif Crøs - Music</title>
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../assets/css/page.css">
+    <link rel="stylesheet" href="../assets/css/music_player.css">
+    <link rel="canonical" href="https://sonomania.forgeheart.org/lucif-crøs/music">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Hi-Res MP3 downloads of music made by Lucif Crøs.">
+    <meta name="keywords" content="Lucif Crøs, high-res music, independant artist, experimental music, HQ mp3, official music downloads, official music streaming">
+    <meta name="author" content="Lucif Crøs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../assets/js/hidden_secrets.js">
+    </script>
+</head>
+
+<body>
+    <p>Created & published by <a href="mailto:lbcx@sonomania.forgeheart.org" id="email_mailto">Lucif Crøs</a>,</p>
+    <h1>Free Hi-Res MP3 audio:</h1>
+
+    <div class="music_player">
+
+        <div class="details">
+            <img class="track_art"></img>
+            <div class="track_name">Title</div>
+        </div>
+
+        <div class="music_player_buttons">
+            <div class="previous_track" onclick="previous_track()">
+                <button>⏮</button>
+            </div>
+            <div class="playpause_track" onclick="play_pause_track()">
+                <button>▶</button>
+            </div>
+            <div class="next_track" onclick="next_track()">
+                <button>⏭</button>
+            </div>
+        </div>
+
+        <div class="slider_container">
+            <div class="current_time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider">
+            <div class="total_duration">00:00</div>
+        </div>
+    </div>
+
+    <div>
+        <ul class="track_list">
         
-        <meta charset="UTF-8">
+        </ul>
+    </div>
 
-        <script src="../assets/js/hidden-secrets.js">
-        </script>
-    </head>
-    <body>
-        <p>Created & published by <a href="mailto:lbcx@sonomania.forgeheart.org" id="email_mailto">Lucif Crøs</a>,</p>
-        <h1>Free Hi-Res MP3 downloads:</h1>
+    <p>End of catalogue.</p>
 
-        <div>
-            <ul>
-                <li>
-                    <a href="../assets/mp3/my_pooping_song.mp3" download>
-                        <img src="../assets/jpg/covers/my_pooping_song.jpg" class="cover">
-                        my pooping song
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Minus.mp3" download>
-                        <img src="../assets/jpg/covers/Minus.jpg" class="cover">
-                        Minus
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Mango.mp3" download>
-                        <img src="../assets/jpg/covers/Mango.jpg" class="cover">
-                        Mango
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Frédérik_L’Appareil_Basilique.mp3" download>
-                        <img src="../assets/jpg/covers/Frédérik_L’Appareil_Basilique.jpg" class="cover">
-                        Frédérik L’Appareil Basilique
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Ware.mp3" download>
-                        <img src="../assets/jpg/covers/Ware.jpg" class="cover">
-                        Ware
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/ProjectTwoSevenEight.mp3" download>
-                        <img src="../assets/jpg/covers/ProjectTwoSevenEight.jpg" class="cover">
-                        Project: Two-Seven-Eight
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Somber_Silence_of_The_Wind.mp3" download>
-                        <img src="../assets/jpg/covers/crøs.jpg" class="cover">
-                        Somber Silence of The Wind
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Dancing_With_The_Dead.mp3" download>
-                        <img src="../assets/jpg/covers/crøs.jpg" class="cover">
-                        Dancing With The Dead
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/Cheese's_Pussycat.mp3" download>
-                        <img src="../assets/jpg/covers/crøs.jpg" class="cover">
-                        Cheese's Pussycat
-                    </a>
-                </li>
-                <li>
-                    <a href="../assets/mp3/In_Da_Club.mp3" download>
-                        <img src="../assets/jpg/covers/crøs.jpg" class="cover">
-                        In Da Club
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>End of catalogue.</p>
-        <button onclick="add_secret()" class="secret_button" id="add_secret_button">?</button>
-        <p id="secrets"></p>
-        <div id="external">
-            <a href="https://www.youtube.com/@LucifCrøs" target="_blank">
-                <img src="../assets/png/brands/youtube.png" class="brand">
-            </a>
-            <a href="https://github.com/Sublimania" target="_blank">
-                <img src="../assets/png/brands/github.png" class="brand">
-            </a>
-            <a href="https://www.qobuz.com/us-en/interpreter/lucif-crs/29739294" target="_blank">
-                <img src="../assets/png/brands/qobuz.png" class="brand">
-            </a>
-        </div>
-        <p id="wordmark" class="left"><i>LBCX</i> * <span id="skull">☠</span></p>
-    </body>
+    <button onclick="add_secret()" class="secret_button" id="add_secret_button">?</button>
+
+    <p id="secrets"></p>
+
+    <div id="external">
+        <a href="https://www.youtube.com/@LucifCrøs" target="_blank">
+            <img src="../assets/png/brands/youtube.png" class="brand">
+        </a>
+        <a href="https://github.com/Sublimania" target="_blank">
+            <img src="../assets/png/brands/github.png" class="brand">
+        </a>
+        <a href="https://www.qobuz.com/us-en/interpreter/lucif-crs/29739294" target="_blank">
+            <img src="../assets/png/brands/qobuz.png" class="brand">
+        </a>
+    </div>
+
+    <p id="wordmark" class="left"><i>LBCX</i> * <span id="skull">☠</span></p>
+
+    <script src="../assets/js/music_player.js">
+    </script>
+    <script src="../assets/js/track_list.js">
+    </script>
+
     <script>
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             document.body.style.visibility = 'visible';
         });
     </script>
+</body>
+
 </html>
