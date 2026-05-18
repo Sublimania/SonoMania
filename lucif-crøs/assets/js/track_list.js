@@ -18,12 +18,18 @@ function render_track_list(track_list) {
             this.src = "../assets/jpg/covers/crøs.jpg";
         };
 
-        const title = document.createTextNode(" " + track.name);
+        const title = document.createElement("span");
+        title.innerHTML = " " + track.name;
+        title.className = "track_title"
+
+        const play_select = document.createElement("span");
+        play_select.textContent = "Click to preview!"
+        play_select.className = "select_indicator"
 
         const br = document.createElement("br")
 
         const download_button = document.createElement("button");
-        download_button.innerHTML = "️<a>Download</a>";
+        download_button.innerHTML = '<a class="download_text">Save</a>';
         download_button.className = "download_button";
 
         download_button.addEventListener("click", (e) => {
@@ -43,6 +49,7 @@ function render_track_list(track_list) {
         track_link.append(br)
         track_link.appendChild(cover_image);
         track_link.appendChild(title);
+        title.appendChild(play_select);
         li.appendChild(track_link);
         list_container.appendChild(li);
     });
