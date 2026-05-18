@@ -13,7 +13,7 @@ function render_track_list(track_list) {
 
         const cover_image = document.createElement("img");
         cover_image.className = "cover";
-        cover_image.src = track.image;
+        cover_image.src = encodeURI(track.image);
         cover_image.onerror = function () {
             this.src = "../assets/jpg/covers/crøs.jpg";
         };
@@ -37,7 +37,7 @@ function render_track_list(track_list) {
             e.stopPropagation();
 
             const download_link = document.createElement("a");
-            download_link.href = track.src;
+            download_link.href = encodeURI(track.src);
             download_link.download = track.name + ".mp3";
 
             document.body.appendChild(download_link);
