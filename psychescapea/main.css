@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans';
+    background: linear-gradient(#2a2a2e, #1b1b1b) center / cover fixed no-repeat;
+
+    color: #d8d8d8;
+    text-shadow: 0px 0px 3px #000000;
+
+    margin: 20px;
+
+    letter-spacing: 1px;
+    line-height: 150%;
+    word-spacing: 1px;
+}
+
+img {
+    filter: drop-shadow(0px 0px 3px #fdfdfd9c);
+}
+
+
+a.hidden, img.hidden {
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #bf79db;
+}
+
+p {
+    font-size: 20px;
+}
