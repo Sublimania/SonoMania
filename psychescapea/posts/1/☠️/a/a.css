@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-height: 100dvh;
+    overflow: hidden;
+  
+    background: url(https://sonomania.forgeheart.org/psychescapea/posts/1/☠️/a/window.png) center / contain fixed repeat;
+    
+    color: rgb(248, 225, 91);
+    text-shadow: 0px 0px 2px white;
+}

@@ -1,0 +1,51 @@
+body, div {
+    font-family: 'Open Sans';
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-height: 100dvh;
+    min-width: 100dvw;
+
+    overflow: hidden;
+  
+    background: black;
+    color: white;
+
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+}
+
+.float {
+    animation: float 1.2s ease-out infinite;
+}
+
+@keyframes float {
+    16.6% {      
+        transform: translateY(0) translateX(100px);
+    }
+
+    33.2% {
+        transform: translateY(-100px) translateX(0px);
+    }
+
+    49.8% {
+        transform: translateY(0) translateX(-100px);
+    }
+
+    66.4% {
+        transform: translateY(-100px) translateX(0px);
+    }
+
+    83% {
+        transform: translateY(0) translateX(100px);
+    }
+}
