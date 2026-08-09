@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accept the offer.</title>
+
+    <link rel="icon" href="https://sonomania.forgeheart.org/psychescapea/favicon2.ico">
+    <link rel="stylesheet" href="https://sonomania.forgeheart.org/font-family.css">
+
+    <style>
+        body,
+        div {
+            font-family: 'Open Sans';
+
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            min-height: 100dvh;
+            min-width: 100dvw;
+
+            overflow: hidden;
+
+            background: black;
+            color: white;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            cursor: pointer;
+            height: 100px;
+            width: 250px;
+        }
+
+        img {
+            animation: warp 15s ease-in-out  infinite;
+        }
+
+        @keyframes warp {
+            0% {
+                transform: skew(-10deg, 0deg);
+            }
+
+            50% {
+                transform: skew(12deg, -6deg) scale3D(1.1, 1.2, 1.1);
+            }
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="enter-popup">
+        <h1>Accept the offer.</h1>
+        <button onclick="confirmEntry()">
+            <h1>
+                Accept the offer.
+            </h1>
+        </button>
+    </div>
+
+    <img src="james.gif" width="100px">
+
+    
+    <script>
+        function confirmEntry() {
+            const confirm = document.getElementById('enter-popup');
+
+            const background_music = new Audio('agent.mp3');
+            background_music.play();
+            background_music.loop = true;
+
+            confirm.remove();
+        }
+    </script>
+</body>
+
+</html>
