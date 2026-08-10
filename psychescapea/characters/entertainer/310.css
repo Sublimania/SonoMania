@@ -1,27 +1,102 @@
-body, div {
+html {
     font-family: 'Open Sans';
+}
+
+body,
+#dancing-taco {
+    margin: 0 0;
+    overflow: hidden;
 
     display: grid;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
     min-height: 100dvh;
     min-width: 100dvw;
 
     overflow: hidden;
-  
-    background: black;
+
+    background: linear-gradient(to bottom right, #ff0000, #ff8800, #ffee00, #00ff00, #00ffff, #1100ff, #8800ff) center / cover fixed no-repeat;
+    text-shadow: 0px 0px 4px black;
+}
+
+#enter-popup {
+    scale: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    
+    line-height: 0px;
+
+    height: 100dvh;
+    width: 100dvw;
+
+    overflow: hidden;
+    
+    background: linear-gradient(#327277, #3e5775) center / cover fixed no-repeat;
+    box-shadow: inset 0px 0px 32px rgba(0, 0, 0, 0.5);
+
     color: white;
 
-    padding: 0;
-    margin: 0;
+    padding: 12px 12px;
+}
+
+#warning-text {
+    line-height: normal;
+    background-color: #00000034;
+    background: linear-gradient(#ffffff17, #49494934) center / cover fixed no-repeat;;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 12.5px;
+    padding: 12px;
+    max-width: 500px;
+    min-height: fit-content;
+}
+
+#warning-header {
+    margin-bottom: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.75));
+}
+
+#dancing-taco img {
+    filter: drop-shadow(0px 0px 12px rgb(0, 0, 0, 0.5));
 }
 
 button {
+    margin: 24px;
+    font-size: 8px;
+    font-weight: normal;
+    position: relative;
     cursor: pointer;
-    height: 100px;
-    width: 200px;
+    height: fit-content;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 100px;
+    background: linear-gradient(#ffffff17, #49494934) center / cover fixed no-repeat;;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.24);
+    border: none;
+    color: #ffffff;
+    text-shadow: 0px 0px 2.5px black;
+    transition: .1s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+}
+
+button:active {
+    transform: scale(0.95);
+    filter: brightness(.85);
 }
 
 .float {
@@ -29,7 +104,7 @@ button {
 }
 
 @keyframes float {
-    16.6% {      
+    16.6% {
         transform: translateY(0) translateX(100px);
     }
 
