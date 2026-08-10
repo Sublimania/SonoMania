@@ -34,7 +34,7 @@ body,
     height: 100dvh;
     width: 100dvw;
 
-    overflow: hidden;
+    overflow-y: scroll;
     
     background: linear-gradient(#327277, #3e5775) center / cover fixed no-repeat;
     box-shadow: inset 0px 0px 32px rgba(0, 0, 0, 0.5);
