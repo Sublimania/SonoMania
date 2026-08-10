@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans';
+    background: linear-gradient(#3641d4, #f07706) center / cover fixed no-repeat;
+    
+    color: #f2ffff;
+    text-shadow: 0px 0px 3px #ffffff;
+
+    margin: 20px;
+
+    letter-spacing: 1px;
+    line-height: 150%;
+    word-spacing: 1px;
+
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #e26b6b;
+    text-shadow: 0px 0px 3px #df3737;
+    width: fit-content;
+}
+
+p, h1, h2, h3, h4 {
+    mix-blend-mode: color-dodge;
+}
+
+li {
+    list-style: none;
+}
